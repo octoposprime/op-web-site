@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  background-image: url("./octoposprime.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.url {
+  display: inline-block;
+  font-weight: 100;
+  line-height: 1.25em;
+  margin-bottom: 0.25em;
+  margin-inline: 33px;
+  color: white;
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  font-size: 25px;
+  bottom: 3rem;
+  color: white;
+  text-align: center;
+}
