@@ -1,36 +1,39 @@
-* {
-  box-sizing: border-box;
+body, html {
   margin: 0;
   padding: 0;
-}
-
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  background-image: url("./octoposprime.jpg");
-  background-repeat: no-repeat;
+  background-image: url('octoposprime.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
-.url {
-  display: inline-block;
-  font-weight: 100;
-  line-height: 1.25em;
-  margin-bottom: 0.25em;
-  margin-inline: 33px;
-  color: white;
-  text-align: center;
+header {
+  background-color: rgba(151, 74, 74, 0.8);
+  padding: 20px;
+  text-align: left;
 }
 
-.footer {
-  position: absolute;
-  font-size: 25px;
-  bottom: 3rem;
+header .logo img {
+  height: 50px;
+}
+
+.content {
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.content section {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 50px 0;
+  padding: 50px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
