@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.card1{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.about-section{
+    background: url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?t=st=1713603221~exp=1713606821~hmac=f0221264fb6440944e4efcf262d845f508885a9cc216831a5f1a36a4a2444c14&w=1060) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 10px 0;
+
+}
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 50px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px; 
+}
+
+.wrapper {
+    margin: 5px; 
+}
+
+
+
+.wrapper a {
+    display: block;
+    width: 150px; 
+    height: 40px; 
+    line-height: 36px; 
+    text-decoration: none;
+    text-align: center;
+    border-radius: 20px; 
+    border: 2px solid seagreen;
+    color: seagreen;
+    font-size: 16px; 
+    font-family: Arial;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    text-transform: uppercase;
+    transition: all .35s;
+    z-index: 1; 
+}
+
+.wrapper a span {
+    position: relative;
+    z-index: 2; 
+}
+
+.wrapper a:before,
+.wrapper a:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background: seagreen;
+    z-index: -1;
+    transition: all .35s;
+}
+
+.wrapper a:before {
+    opacity: .5;
+}
+
+.wrapper a:after {
+    transition-delay: .2s;
+}
+
+.wrapper a:hover {
+    color: #fff;
+}
+
+.wrapper a:hover:before,
+.wrapper a:hover:after {
+    top: 0;
+}
+
+
+
+
+
+
+  
+
+
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+
+/* ? Features section */
+
+.row{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3.75em;
+    margin: 0.6em 0;
+    font-weight: 600;
+    color: #070024;
+}
+
+.column{
+
+    padding: 1em;
+}
+
+.card{
+    padding: 3.1em 1.25em;
+    text-align: center;
+    background: linear-gradient(0deg , #397ef6 10px ,transparent 10px);
+    background-repeat: no-repeat;
+    background-position: 0 0.62em;
+    box-shadow: 0 0 2.5em rgba(0, 0, 0, 0.15);
+    border-radius: 0.5em;  
+    transition: 0.5s;
+}
+
+.card .icon {
+    font-size: 2.5em;
+    height: 2em;
+    width: 2em;
+    margin: auto;
+    background-color: #397ef6;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.icon:before{
+    position: absolute;
+    content: "";
+    height: 1.5em;
+    width: 1.5em;
+    border: 0.12em solid #397ef6;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.card h3{
+    font-size: 1.3em;
+    margin: 1em 0 1.4em 0;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #070024;
+}
+
+.card p {
+    line-height: 2em;
+    color: #625a71;
+}
+
+.card:hover{
+    background-position: 0;
+
+}
+
+.card:hover .icon:before{
+    height: 2.25em;
+    width: 2.25em;
+}
+
+@media screen and (min-width: 768px){
+    section{
+        padding: 1em 7em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section {
+        padding: 1em;
+    }
+    .card{
+        padding: 5em 2em;
+    }
+    .column{
+        flex: 0 0  33.33%;
+        max-width: 33.33%;
+        padding: 0 1em;
+    }
+}
