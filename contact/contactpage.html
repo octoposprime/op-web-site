@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Octopos Prime</title>
+  <link rel="stylesheet" href="contactpage.css" />
+  
+</head>
+<body>
+  <header class="header">
+    <h1>Contact Us</h1>
+  </header>
+  <main class="container">
+    <section class="left">
+      <h2>Send Message</h2>
+      <div class="form-left">
+        <form action="/submit_form" method="post" id="contact-form">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="first name"
+          />
+
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="last name"
+          />
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="email" />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="phone" />
+
+          <label for="address">Address</label>
+          <textarea
+            id="address"
+            name="address"
+            placeholder="address"
+            rows="4"
+          ></textarea>
+
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="message"
+            rows="6"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+    <aside class="right">
+      <div class="img">
+        <img src="img/octopos.png" alt="Octop-OS Prime logo" />
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
