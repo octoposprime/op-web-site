@@ -1,0 +1,137 @@
+body,
+html {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #021529;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-top: 2%;
+  color: #e5e5e5;
+  word-spacing: 1ch;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left,
+.right {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.left {
+  flex: 1;
+  margin-right: 20px;
+  background-color: #e5e5e5;
+  color: #021529;
+}
+
+.right {
+  flex: 1;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #021529;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 98%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #021529;
+  color: #e5e5e5;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #375777;
+  color: #e5e5e5;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #526D82;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+/* Style changes for screens of 600 pixels and below */
+body, html {
+  height: auto;
+  overflow: visible;
+}
+
+.container {
+  flex-direction: column;
+  padding: 10px;
+}
+
+.left,
+.right {
+  flex: none;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+.left {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: calc(100% - 20px);
+}
+}
+
+.feedback-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  color: #021529; /* Lacivert renk */
+  background-color: #ffffff; /* Beyaz arka plan */
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.feedback-message::before {
+  content: '\2714'; /* Yeşil tik işareti kodu */
+  color: #4CAF50; /* Yeşil renk */
+  font-size: 24px;
+  margin-right: 10px;
+}
