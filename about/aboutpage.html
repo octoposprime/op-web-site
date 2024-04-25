@@ -1,34 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="about.css">
-<title>About Us</title>
-</head>
-<body class="aboutpage">
-  <main>
-    <section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>About Us</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Feature</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="index.html"
+            ><img class="logo1" src="/images/octopos-effects.png" alt=""
+          /></a>
+        </li>
+        <li class="hideOnMobile"><a href="/about/aboutpage.html">About</a></li>
+        <li class="hideOnMobile"><a href="/feature/index.html">Feature</a></li>
+        <li class="hideOnMobile"><a href="">Product</a></li>
+
+        <li class="hideOnMobile">
+          <a href="/contact/contactpage.html">Contact</a>
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main1">
+      <section>
         <h2>What is octoposprime?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod tempor neque eu hendrerit. Nulla facilisi.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod
+          tempor neque eu hendrerit. Nulla facilisi.
+        </p>
       </section>
-    <section>
-      <h2>Our Story</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod tempor neque eu hendrerit. Nulla facilisi.</p>
-    </section>
-    <div class="team-member">
-      <img src="/img/octoposprime.jpg" alt="Team Member 1">
-    
-    </div>
-    <section>
-      <h2>Our Experience</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod tempor neque eu hendrerit. Nulla facilisi.</p>
-     
-      
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Your Company</p>
-  </footer>
-</body>
+      <section>
+        <h2>Our Story</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod
+          tempor neque eu hendrerit. Nulla facilisi.
+        </p>
+      </section>
+      <div class="team-member">
+        <img src="/image/octoposprime.jpg" alt="Team Member 1" />
+      </div>
+      <section class="section1">
+        <h2>Our Experience</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod
+          tempor neque eu hendrerit. Nulla facilisi.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Your Company</p>
+    </footer>
+  </body>
 </html>

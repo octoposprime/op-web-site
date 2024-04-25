@@ -1,22 +1,22 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   min-height: 100vh;
-  background-image: url(img/octoposprime.jpg);
+  background-image: url(image/octoposprime.jpg);
+  background-color: #111827;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav{
-  background-color: white;
+nav {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
-nav ul{ 
+nav ul {
   width: 100%;
   list-style: none;
   display: flex;
@@ -24,28 +24,28 @@ nav ul{
   align-items: center;
 }
 
-nav li{
-  height:  50px;
+nav li {
+  height: 50px;
 }
 
-nav a{
+nav a {
   height: 100%;
   padding: 0 30px;
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
-nav a:hover{
-  background-color: #f0f0f0;
+nav a:hover {
+  background-color: #143c5d;
 }
 
-nav li:first-child{
+nav li:first-child {
   margin-right: auto;
 }
 
-.sidebar{
+.sidebar {
   position: fixed;
   top: 0;
   right: 0;
@@ -61,21 +61,66 @@ nav li:first-child{
   justify-content: flex-start;
 }
 
-.menu-button{
+.menu-button {
   display: none;
 }
 
-@media(max-width: 768px){
-  .hideOnMobile{
+@media (max-width: 768px) {
+  .hideOnMobile {
     display: none;
   }
-  .menu-button{
+  .menu-button {
     display: block;
   }
 }
 
-@media(max-width: 400px){
-  .sidebar{
+@media (max-width: 400px) {
+  .sidebar {
     width: 100%;
   }
 }
+
+footer {
+  position: fixed;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  bottom: 0;
+}
+
+.logo1 {
+  justify-content: center;
+  align-items: center;
+  width: 5cm;
+}
+
+/*About Page*/
+
+.main1 {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.section1 {
+  margin-bottom: 30px;
+}
+
+h1,
+h2,
+h3 {
+  color: #ffffff;
+}
+
+.team-member {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.team-member img {
+  max-width: 200px;
+  border-radius: 5px;
+}
+
+
