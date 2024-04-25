@@ -1,68 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Octopos Prime</title>
-  <link rel="stylesheet" href="contactpage.css" />
-  
-</head>
-<body>
-  <header class="header">
-    <h1>Contact Us</h1>
-  </header>
-  <main class="container">
-    <section class="left">
-      <h2>Send Message</h2>
-      <div class="form-left">
-        <form action="/submit_form" method="post" id="contact-form">
-          <label for="fname">First Name</label>
-          <input
-            type="text"
-            id="fname"
-            name="fname"
-            placeholder="first name"
-          />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Octopos Prime</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Feature</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="index.html"
+            ><img class="logo1" src="/image/octopos-effects.png" alt=""
+          /></a>
+        </li>
+        <li class="hideOnMobile"><a href="/about/aboutpage.html">About</a></li>
+        <li class="hideOnMobile">
+          <a href="/feature/feature.html">Feature</a>
+        </li>
+        <li class="hideOnMobile"><a href="">Product</a></li>
 
-          <label for="lname">Last Name</label>
-          <input
-            type="text"
-            id="lname"
-            name="lname"
-            placeholder="last name"
-          />
+        <li class="hideOnMobile">
+          <a href="/contact/contactpage.html">Contact</a>
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 -960 960 960"
+              width="24"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="direct-contact-container">
+      <ul class="contact-list">
+        <li class="list-item">
+          <i class="fa fa-map-marker fa-2x"
+            ><span class="contact-text place">City, State</span></i
+          >
+        </li>
 
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="email" />
+        <li class="list-item">
+          <i class="fa fa-phone fa-2x"
+            ><span class="contact-text phone"
+              ><a href="tel:1-212-555-5555" title="Give me a call"
+                >(212) 555-2368</a
+              ></span
+            ></i
+          >
+        </li>
 
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" placeholder="phone" />
+        <li class="list-item">
+          <i class="fa fa-envelope fa-2x"
+            ><span class="contact-text gmail"
+              ><a href="mailto:#" title="Send me an email"
+                >hitmeup@gmail.com</a
+              ></span
+            ></i
+          >
+        </li>
+      </ul>
 
-          <label for="address">Address</label>
-          <textarea
-            id="address"
-            name="address"
-            placeholder="address"
-            rows="4"
-          ></textarea>
+      <hr />
+      <ul class="social-media-list">
+        <li>
+          <a href="#" target="_blank" class="contact-icon">
+            <i class="fa-brands fa-github" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="contact-icon">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="contact-icon">
+            <i class="fa-brands fa-google" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="contact-icon">
+            <i class="fa-brands fa-youtube" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+      <hr />
 
-          <label for="message">Your Message</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="message"
-            rows="6"
-          ></textarea>
-
-          <input type="submit" value="Submit" />
-        </form>
+      <div class="copyright">
+        Copyright &copy; 2024 Octopos Prime | All Rights Reserved
       </div>
-    </section>
-    <aside class="right">
-      <div class="img">
-        <img src="img/octopos.png" alt="Octop-OS Prime logo" />
-      </div>
-    </aside>
-  </main>
-</body>
+    </div>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
 </html>
