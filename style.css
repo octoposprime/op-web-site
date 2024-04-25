@@ -269,7 +269,12 @@ h1, h2, h3 {
 }
 
 /* Feature page */
-
+.feature-h1 {
+  text-align: center;
+  font-size: 60px;
+  color: #0b0e38;
+  margin-bottom: 40px;
+ }
 .card1 {
   min-height: 100vh;
   display: flex;

@@ -10,23 +10,25 @@
       <nav>
         <ul class="sidebar">
             <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Product</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Forum</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="#">Feature</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
         <ul>
-            <li><a href="#">Octopos Prime</a></li>
-            <li class="hideOnMobile"><a href="#">Product</a></li>
-            <li class="hideOnMobile"><a href="#">Blog</a></li>
-            <li class="hideOnMobile"><a href="#">About</a></li>
-            <li class="hideOnMobile"><a href="#">Forum</a></li>
-            <li class="hideOnMobile"><a href="#">Login</a></li>
-            <li class="menu-button"onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+          <li><a href="index.html"><img class="logo1" src="/images/octopos-effects.png" alt=""></a></li>
+          <li class="hideOnMobile"><a href="/aboutpage.html">About</a></li>
+          <li class="hideOnMobile"><a href="/feature.html">Feature</a></li>
+          <li class="hideOnMobile"><a href="">Product</a></li>
+
+          <li class="hideOnMobile"><a href="/contactpage.html">Contact</a></li>
+          <li class="menu-button"onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>       
       </nav>
     </header>
+    <footer>
+      <p>Copyright &copy; 2024 Octopos Prime | All Rights Reserved</p>
+    </footer>
 <script>
     function showSidebar() {
         const sidebar = document.querySelector('.sidebar');
