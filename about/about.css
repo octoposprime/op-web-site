@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+  
+  header {
+    background-color: white;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  .team-member {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .team-member img {
+    max-width: 200px;
+    border-radius: 5px;
+  }
+  
+  footer {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
