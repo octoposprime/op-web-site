@@ -95,6 +95,104 @@ footer {
   width: 5cm;
 }
 
+/* Index */
+.index {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #182024;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  background-image: url("image/frame.png");
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.left, .right {
+  grid-column: span 6; /* Her biri 6 fraksiyon kaplar */
+}
+
+@media (max-width: 600px) {
+  .left, .right {
+    grid-column: span 12; /* Ekran küçüldükçe her eleman tam genişlik kaplar */
+  }
+}
+
+.left {
+  flex: 1;
+  margin-right: 0%;
+  margin-top: 15%;
+  font-size: 25px;
+}
+
+
+#revolutionize-text {
+  font-size: 40px; /* Smaller font size as requested */
+  text-transform: uppercase;
+  animation: stroke 5s infinite alternate;
+}
+
+#iris-text {
+  font-size: 65px; /* Larger font size as requested */
+  text-transform: uppercase;
+  animation: stroke 5s infinite alternate;
+}
+
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: rgba(54, 95, 160, 1);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: rgba(54, 95, 160, 1);
+  }
+  80% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: rgba(54, 95, 160, 1);
+    stroke-width: 3;
+  }
+  100% {
+    fill: rgba(72, 138, 204, 1);
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #365fa0;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #243b6b;
+  transform: translateY(-2px);
+}
+
+.btn:not(:last-child) {
+  margin-right: 10px;
+}
+
 /* Social Media Icons will be same */
 
 .social-media-list {
