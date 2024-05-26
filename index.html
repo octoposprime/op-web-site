@@ -1,63 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Octopos Prime</title>
-  </head>
-  <body class="index">
-      <nav>
-        <ul class="sidebar">
-            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Feature</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <ul>
-          <li><a href="index.html"><img class="logo1" src="/image/octopos-effects.png" alt=""></a></li>
-          <li class="hideOnMobile"><a href="./about/aboutpage.html">About</a></li>
-          <li class="hideOnMobile"><a href="./feature/feature.html">Feature</a></li>
-          <li class="hideOnMobile"><a href="">Product</a></li>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Octopos Future</title>
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<script defer src="script.js"></script>
+</head>
+<body>
+<div class="container">
+  <img src="../image/octopos-effects.png" class="logo">
+  <img src="../image/octopos.png" alt="Central Octopus" class="octopus">
 
-          <li class="hideOnMobile"><a href="./contact/contactpage.html">Contact</a></li>
-          <li class="menu-button"onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        </ul>       
-      </nav>
 
-      <section class="left">
-        <svg width="100%" height="200px">
-          <text id="revolutionize-text" x="10%" y="30%" fill="#365fa0">Revolutionize the Future</text>
-          <text id="iris-text" x="10%" y="60%" fill="#365fa0">with Octopos Prime</text>
-        </svg>
-      
-        <div class="buttons">
-          <button class="btn" type="button">Learn More</button>
-          <button class="btn" type="button">Get Started</button>
-        </div>
-      </section>
-      
-      
-      <aside class="logo-right">
-        <div class="img-right">
-        
-        </div>
-      </aside>
 
-    <footer>
-      <p>Copyright &copy; 2024 Octopos Prime | All Rights Reserved</p>
-    </footer>
-<script>
-    function showSidebar() {
-        const sidebar = document.querySelector('.sidebar');
-        sidebar.style.display = 'flex';
-    }
-    function hideSidebar() {
-        const sidebar = document.querySelector('.sidebar');
-        sidebar.style.display = 'none';
-    }
-</script>
-  </body>
+  <!-- Example of one icon; duplicate and modify as necessary -->
+  <img src="../image/icons/devopsIcon1.png"
+  title="ResolveOps" 
+  alt="DevOps is a culture, methodology, and toolset that accelerates the delivery of IT services 
+  and applications. This approach removes barriers and shortens processes throughout every stage of the software 
+  lifecycle by fostering effective collaboration between development and operations teams. DevOps facilitates continuous
+  improvements through the use of extensive tools for automation, testing, configuration, integration, delivery, and other
+  processes, enabling organizations to move more swiftly and gain a competitive edge."  
+  data-images="logo.png, logo.png, octopos.png"
+  class="teamIcon teamIcon-1">
+
+  <img src="../image/icons/serIcon1.png"
+  title="" 
+  alt="" 
+  class="teamIcon teamIcon-2">
+
+  <img src="../image/icons/electricIcon1.png"
+  title="ComNal" 
+  alt="We are ComNal, a team that provides innovative and reliable solutions in the electronics 
+  sector. We offer comprehensive services to our clients in areas such as PCB board design, 
+  embedded programming, and external enclosure design, creating tailored solutions to meet their specific needs."  
+  class="teamIcon teamIcon-3" >
+
+  <img src="../image/icons/designIcon1.png" 
+  title="NACCASH"
+  alt="Our 3D and 2D design team enhances brand identity and brings projects to life by offering creative and original visual solutions to our clients. 
+  Utilizing modern 3D and 2D techniques, our design team delivers custom solutions that strengthen visual communications and amplify the impact of their 
+  brands. We assist our clients in realizing their projects with creative and functional designs, thereby highlighting their brand values."
+  class="teamIcon teamIcon-4" >
+
+  <img src="../image/icons/danisIcon.png" 
+  title="Ubn-Jr"
+  alt="The consulting company within this corporate structure manages all customer relations for the nine companies. 
+  It oversees processes such as business analysis between customers and technical staff, acting as a bridge that conveys customer demands 
+  to the technical team and the technical team's queries to the customer. Additionally, it brings external business to the relevant companies 
+  and takes responsibility for all relationship management from start to finish."
+  class="teamIcon teamIcon-6" >
+
+  <img src="../image/icons/webIcon1.png" 
+  title="InoskyTech"
+  alt="At Innoskytech, we are a team passionate about innovation in the web space, and we strive to bring these innovations to you. 
+  We offer comprehensive services in areas such as custom-designed websites, e-commerce sites, and web applications. Our team works passionately to help 
+  strengthen our clients' online presence and ensure their success." 
+  class="teamIcon teamIcon-7" >
+
+  <img src="../image/icons/backendIcon1.png"
+  title="Posinowa" 
+  alt="Posinowa is a technology firm that delivers robust backend solutions for web and mobile applications. 
+  Our services encompass database management, API integration, and server operations, ensuring that your applications 
+  operate smoothly and efficiently. With a focus on security and performance optimization, we enhance data protection 
+  and elevate the customer experience." 
+  class="teamIcon teamIcon-8" >
+
+  <img src="../image/icons/mobilIcon1.png" 
+  title="Modest"
+  alt="E-commerce, education, industry, and other fields benefit from website service integration, 
+  enabling the incorporation of various features and components into websites. As an 8-person team specializing in 
+  this field, we are here to provide our customers with customized solutions. For instance, payment processing 
+  integration facilitates secure transactions on e-commerce websites." 
+  class="teamIcon teamIcon-9" >
+
+  <img src="../image/icons/gameIcon1.png" 
+  title="NVM Game"
+  alt="NVM Game is a game development company that offers innovative 
+  and creative gaming solutions. Specialized in both 2D and 3D games, our firm leverages cutting-edge technology 
+  to craft games that are engaging, addictive, and exhilarating." 
+  class="teamIcon teamIcon-10" >
+
+  <div id="popupOverlay" class="popupOverlay"></div> <!-- New overlay for blurring -->
+  <div id="popup" class="popup">
+    <h1 id="popupTitle" class="popupTitle">Team Name</h1>
+    <p id="popupContent">Info about the Team</p>
+  </div>
+
+<a href="/contact/contactpage.html" id="contactButton" class="button">Lets Talk</a>
+
+
+  
+</div>
+</body>
 </html>
