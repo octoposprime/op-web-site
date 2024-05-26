@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../image/background.png'); /* Update the path as necessary */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+
+.imac-container {
+    display: flex;
+    width: 60%; /* Adjust based on your design preference */
+    height: 80%; /* This can also be adjusted */
+    position: relative; /* Make this container relative */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+}
+
+.imac-image {
+    position: absolute;
+    top: 50px;
+    left: 180px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.contact-text {
+    position: absolute; /* Position the text absolute within the .imac-container */
+    top: 30%; /* Center vertically */
+    left: 55%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the text */
+    font-size: 48px; /* Adjust font size as needed */
+    color: white; /* Text color */
+    z-index: 1; /* Ensure text is above the image */
+    font-family: 'Roboto', sans-serif; /* Futuristic font family */
+    animation: neon 1.5s ease-in-out infinite alternate; /* Neon animation */
+}
+
+
+.mailIcon {
+    width: 50px;
+}
+
+
+.social-icons {
+    position: absolute;
+    top: 45%; /* Center vertically */
+    gap: 20px;
+    left: 44.5%; /* Adjust based on your design preference */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    z-index: 10;
+}
+
+.socialIcon {
+    width: 50px;
+}
+
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px #00fff9, 0 0 20px #00fff9, 0 0 30px #00fff9, 0 0 40px #00fff9, 0 0 70px #00fff9, 0 0 80px #00fff9, 0 0 100px #00fff9, 0 0 150px #00fff9;
+    }
+}
+
+
+.toys-container {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.orange-toy, .black-toy, .octopos-toy{
+    position: absolute;
+}
+
+.orange-toy{
+    transition: opacity 0.5s ease-out;
+    bottom: -56px;
+    left: 4%;
+    z-index: 2;
+    overflow: visible;
+}
+
+.black-toy{
+    bottom: -45px;
+    left: 20%;
+}
+
+.octopos-toy{
+    bottom: -100px;
+    left: 46%;
+    cursor: pointer;
+    will-change: transform;
+}
+
+
+@keyframes jump-and-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-100px); }          
+}
+
+.octopos-toy img.jump-and-disappear {
+    animation: jump-and-bounce 0.5s ease-in-out forwards; 
+}
+
+
+.site-logo {
+    position: absolute;
+    z-index: 1000000;
+    width: 15%;
+    top: 10px; 
+    left: 10px;
+
+}
+
+
+/* Media Query for 1920x1080 */
+@media (min-width: 1680px) and (max-width: 1920px) {
+    .orange-toy {
+        left: 180px;
+    }
+    .black-toy {
+        left: 430px;
+    }
+
+    .contact-text {
+        left: 600px;
+    }
+    .octopos-toy {
+        top: 430px;
+    }
+  }
