@@ -118,8 +118,8 @@ body, html {
 
 #contactButton {
   position: absolute;
-  top: 30px;
-  right: 10px;
+  top: 600px;
+  right: 630px;
   transform: translateX(-50%);
   padding: 10px 25px;
   font-size: 17px;
