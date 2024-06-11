@@ -147,8 +147,8 @@ body, html {
 .popup {
   position: fixed;
   padding: 30px;
-  width: auto;
-  height: auto; 
+  width: 800px; /* Set a fixed width */
+  height: 400px; /* Set a fixed height */
   max-width: 1000px; 
   background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
   backdrop-filter: blur(20px);
@@ -166,6 +166,7 @@ body, html {
   font-family: 'Ubuntu', sans-serif; /* Using Ubuntu font */
   animation: fadeIn 0.5s ease-out;
 }
+
 
 #popupContent {
   color: #E8E8E8;
