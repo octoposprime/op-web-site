@@ -22,13 +22,18 @@ body, html {
 
 .octopus {
   position: absolute; 
-  width: 100%;
+  width: auto;
+  height: auto;
   top: 60%;
   left: 49%;
   transform: translate(-50%, -50%);
   z-index: 2;
 }
-
+@media (min-width: 1280px) and (max-width: 1440px) {
+    .octopus {
+        width: 30%;
+    }
+}
 .circles {
   position: absolute;
   width: 37%;
@@ -43,6 +48,7 @@ body, html {
   margin-top: 30%;
   width: 100px;
   height: auto;
+  border-radius: 50%;
   z-index: 3;
   transition: transform 0.3s ease, width 0.3s ease, opacity 0.3s ease, transform 0.3s ease; /* Added opacity and transform transitions */
 }
