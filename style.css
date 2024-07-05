@@ -100,6 +100,8 @@ body, html {
   .teamIcon-8 { transform: rotate(132deg) translateX( -392px)  rotate(-132deg); }
   .teamIcon-9 { transform: rotate(155deg) translateX( -400px)  rotate(-155deg); }
   .teamIcon-10 {transform: rotate(180deg)  translateX(-400px)  rotate(-180deg); }
+
+  
   .octopus {
     width: 100%; /* Slightly smaller octopus */
   }
@@ -118,8 +120,8 @@ body, html {
 
 #contactButton {
   position: absolute;
-  top: 600px;
-  right: 630px;
+  top: 750px;
+  right: 730px;
   transform: translateX(-50%);
   padding: 10px 25px;
   font-size: 17px;
