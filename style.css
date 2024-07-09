@@ -2,7 +2,7 @@ body, html {
   height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url('../image/backgorund.png');
+  background-image: url('./image/backgorund.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -171,6 +171,14 @@ body, html {
 #popupContent {
   color: #E8E8E8;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.popupContent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 
